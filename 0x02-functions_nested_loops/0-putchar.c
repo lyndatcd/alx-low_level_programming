@@ -1,19 +1,22 @@
 #include "main.h"
+
 /**
- * main - check the code
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: always 0
  */
+
 int main(void)
 {
-	char *sh = "_putchar";
+	int i = 0;
+	char c;
+	char s[] = "_putnar\n";
 
-	while (*sh)
+	while (i <= 9)
 	{
-		_putchar(*sh);
-		sh++;
+		c = s[i];
+		_putchar(c);
+		i++;
 	}
-	_putchar('\n');
-
 	return (0);
 }
