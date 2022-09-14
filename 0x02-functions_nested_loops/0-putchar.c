@@ -1,22 +1,17 @@
 #include "main.h"
-
 /**
- * main - entry point
- *
- * Return: always 0
+ * main - check the code.
+ * Return: 0 on success.
  */
-
 int main(void)
 {
-	int i = 0;
-	char c;
-	char s[] = "_putnar\n";
+	char c[] = "_putchar";
+	int i;
 
-	while (i <= 9)
+	for (i = 0; i < 9; i++)
 	{
-		c = s[i];
-		_putchar(c);
-		i++;
+		_putchar(c[i]);
 	}
+	_putchar('\n');
 	return (0);
 }
